@@ -1,0 +1,177 @@
+/** @format */
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  position: relative;
+  padding: 3% 5%;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: "Karla", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(34, 35, 46, 0.75) 50%,
+    rgba(34, 35, 46)
+  );
+}
+
+.main-text {
+  position: absolute;
+  top: 40%;
+  left: 22%;
+}
+
+.header-text {
+  color: white;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.muted {
+  position: relative;
+  top: 85px;
+  left: -20%;
+}
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+}
+
+.header-text {
+  margin: auto;
+}
+
+#about,
+#genre,
+#artist {
+  background-color: #22232e;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.image-crop {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.genre-title {
+  color: #fff;
+  margin-top: 3px;
+}
+
+.genre-desc {
+  font-size: 1rem;
+}
+
+.about-desc {
+  font-size: 2rem;
+}
+
+.container {
+  text-align: center;
+}
+.container h2 {
+  font-weight: 600;
+  font-size: 4rem;
+  color: #00c2cb;
+  margin: 3rem auto;
+}
+.container p {
+  /* font-size: 1.2rem; */
+  color: #fff;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+#audio-control {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  padding: 10px 20px;
+  opacity: 0;
+  color: #fff;
+  display: inline-block;
+}
+
+/* #audio-control {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 22px;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  color: #e0ffff;
+  opacity: 0;
+} */
