@@ -10,6 +10,8 @@ body {
   padding: 0px;
 }
 
+/* NAVBAR */
+
 .navbar {
   position: relative;
   padding: 3% 5%;
@@ -28,6 +30,7 @@ body {
   padding: 0 15px;
 }
 
+/* HEADER */
 #header {
   width: 100%;
   height: 100vh;
@@ -68,6 +71,21 @@ body {
   left: -20%;
 }
 
+#audio-control {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  padding: 10px 20px;
+  opacity: 0;
+  color: #fff;
+  display: inline-block;
+}
+
 video {
   position: absolute;
   width: 100%;
@@ -82,6 +100,7 @@ video {
   margin: auto;
 }
 
+/* ABOUT GENRE ARTIST */
 #about,
 #genre,
 #artist {
@@ -131,6 +150,8 @@ video {
   color: #fff;
 }
 
+/* RESPONSIVE */
+
 @media (min-aspect-ratio: 16/9) {
   .back-video {
     width: 100%;
@@ -144,34 +165,3 @@ video {
     height: 100%;
   }
 }
-
-#audio-control {
-  position: absolute;
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
-  padding: 10px 20px;
-  opacity: 0;
-  color: #fff;
-  display: inline-block;
-}
-
-/* #audio-control {
-  background: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 22px;
-  padding: 1rem;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  color: #e0ffff;
-  opacity: 0;
-} */
