@@ -150,6 +150,23 @@ video {
   color: #fff;
 }
 
+.headtext-artist {
+  color: white;
+}
+
+.text-desc {
+  text-align: left;
+}
+
+.artist-photo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
 /* RESPONSIVE */
 
 @media (min-aspect-ratio: 16/9) {
