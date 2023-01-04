@@ -123,6 +123,14 @@ video {
   flex-direction: column;
   padding: 30px;
 }
+.artist-section {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.headtext-genre {
+  color: white;
+}
 
 .image-crop {
   width: 100px;
@@ -131,6 +139,7 @@ video {
   overflow: hidden;
   border-radius: 50%;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 .genre-title {
@@ -183,6 +192,12 @@ video {
   overflow: hidden;
   border-radius: 5%;
   margin-bottom: 1rem;
+  transition: transform 0.2s;
+}
+.artist-photo:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 /* RESPONSIVE */
