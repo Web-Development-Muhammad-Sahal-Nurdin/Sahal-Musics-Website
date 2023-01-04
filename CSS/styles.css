@@ -102,7 +102,17 @@ video {
 
 /* ABOUT GENRE ARTIST */
 #about,
-#genre,
+#genre {
+  background-color: #22232e;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
 #artist {
   background-color: #22232e;
   height: 100vh;
@@ -159,11 +169,12 @@ video {
 }
 
 .artist-photo {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
+  margin-top: 40px;
   position: relative;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 5%;
   margin-bottom: 1rem;
 }
 
