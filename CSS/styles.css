@@ -101,6 +101,10 @@ video {
 }
 
 /* ABOUT GENRE ARTIST */
+.row {
+  padding: auto 100%;
+}
+
 #about,
 #genre {
   background-color: #22232e;
@@ -130,6 +134,7 @@ video {
 
 .headtext-genre {
   color: white;
+  margin-top: 3rem;
 }
 
 .image-crop {
@@ -181,19 +186,35 @@ video {
   text-align: left;
 }
 
-.artist-photo {
+.artist-photo-left {
   width: 300px;
   height: 300px;
   object-fit: cover;
   margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  right: 30px;
+  /* margin-left: auto;
+  margin-right: auto; */
   position: relative;
   overflow: hidden;
   border-radius: 5%;
   margin-bottom: 1rem;
   transition: transform 0.2s;
 }
+.artist-photo-right {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 1rem;
+  left: 30px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  position: relative;
+  overflow: hidden;
+  border-radius: 5%;
+  margin-bottom: 1rem;
+  transition: transform 0.2s;
+}
+
 .artist-photo:hover {
   transform: scale(
     1.2
@@ -213,5 +234,12 @@ video {
   .back-video {
     width: auto;
     height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-sm-6 > img {
+    width: 150px;
+    height: 150px;
   }
 }
