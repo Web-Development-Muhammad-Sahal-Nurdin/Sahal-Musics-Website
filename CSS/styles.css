@@ -1,52 +1,79 @@
 /** @format */
 
 * {
-  box-sizing: border-box;
+  box-sizing: inherit;
   scroll-behavior: smooth;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  text-align: center;
 }
 
 /* NAVBAR */
+.first-container {
+  position: relative;
+}
+
+.logo {
+  width: 5rem;
+  margin: 0;
+  padding: 0;
+  margin-right: 1rem;
+}
 
 .navbar {
   position: fixed;
-  padding: 3% 5%;
-  top: 0;
+  padding: 2% 5%;
+  top: 1rem;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 }
 
-.navbar-brand {
-  font-family: "Karla", sans-serif;
-  font-size: 2.5rem;
+.navbar .navbar-brand {
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .nav-item {
-  padding: 0 15px;
+  padding: 0 0.938rem;
+  font-size: 1rem;
 }
 
 /* HEADER */
-#header {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-video {
-  z-index: -1;
+.col-lg-6 {
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding: 18%;
+  margin: 0 auto;
 }
 
-.overlay {
+.big-heading {
+  font-family: "Karla", sans-serif;
+  z-index: 10;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.5;
+  color: white;
+  font-weight: bold;
+}
+
+.big-heading:hover {
+  color: #27e1c1;
+}
+
+.overlay-gradient {
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   background-image: linear-gradient(
     to bottom,
     rgba(34, 35, 46, 0.75) 50%,
@@ -54,26 +81,11 @@ video {
   );
 }
 
-.main-text {
-  position: absolute;
-  top: 40%;
-  left: 22%;
-}
-
-.header-text {
-  color: white;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 5rem;
-  font-weight: bold;
-}
-
 .muted {
-  position: relative;
+  position: absolute;
   top: 85px;
   left: -20%;
 }
-
 #audio-control {
   position: absolute;
   margin: 0;
@@ -91,54 +103,51 @@ video {
 
 video {
   position: absolute;
+  overflow: hidden;
+
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+
+  z-index: -10;
   right: 0;
   bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .header-text {
   margin: auto;
 }
 
-/* ABOUT GENRE ARTIST */
-.row {
-  padding: auto 100%;
-  position: relative;
+/* ABOUT */
+
+#about {
+  background-color: #22232e;
+  justify-content: center;
+  padding: 1.875rem;
+  margin: 0;
+}
+.about-desc {
+  font-size: 1.2rem;
 }
 
-#about,
+/* third container */
 #genre {
   background-color: #22232e;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px;
+  padding: 1.875rem;
+}
+.third-container {
+  display: block;
 }
 
-#artist {
-  background-color: #22232e;
-  height: 100%;
-  width: 100%;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 30px;
-}
-.artist-section {
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+.genre-title {
+  color: #fff;
+  margin-top: 0.188rem;
 }
 
-.headtext-genre {
-  color: white;
-  margin-top: 3rem;
+.genre-desc {
+  font-size: 1rem;
 }
 
 .image-crop {
@@ -151,33 +160,39 @@ video {
   object-fit: cover;
 }
 
-.genre-title {
-  color: #fff;
-  margin-top: 3px;
+/* Fourth Container */
+#artist {
+  background-color: #22232e;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.875rem;
 }
+.artist-section {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.headtext-genre {
+  color: white;
+  margin-top: 3rem;
+}
+
 .headtext-artist {
   text-align: left;
 }
-
-.genre-desc {
-  font-size: 1rem;
-}
-
-.about-desc {
-  font-size: 2rem;
-}
-
 .container {
   text-align: center;
 }
 .container h2 {
   font-weight: 600;
-  font-size: 4rem;
-  color: #00c2cb;
+  font-size: 2rem;
+  color: #27e1c1;
   margin: 3rem auto;
 }
 .container p {
-  /* font-size: 1.2rem; */
   color: #fff;
 }
 
@@ -223,14 +238,14 @@ video {
 /* RESPONSIVE */
 
 @media (min-aspect-ratio: 16/9) {
-  .back-video {
+  .video-bg {
     width: 100%;
     height: auto;
   }
 }
 
 @media (max-aspect-ratio: 16/9) {
-  .back-video {
+  .video-bg {
     width: auto;
     height: 100%;
   }

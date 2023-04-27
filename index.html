@@ -34,99 +34,119 @@
   </head>
   <body>
     <!-- HEADER -->
-    <section id="header">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <img src="" alt="sahal-logo" />
-          <a class="navbar-brand" href="">Muhammad Sahal Nurdin</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <div class="first-container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <img class="logo" src="IMAGES/Sahal-Logo.png" alt="sahal-logo" />
+        <div class="navbar-brand"><a href=""><a>Sahal Nurdin</a></div>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#genre">Favorite's Genre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#artist">Favorite's Artist</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#album">Favourite's Album</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#album">Main Website</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="overlay"></div>
-        <video
-          src="VIDEOS/travisscotmv.mp4"
-          id="video-bg"
-          autoplay
-          loop></video>
-        <div id="audio-control" class="muted">hallo</div>
-        <div class="main-text">
-          <h1 class="header-text">Sahal's Favorite Musics</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#genre">Favorite's Genre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#artist">Favorite's Artist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#spotify">Spotify</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#main">Main Website</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </nav>
+
+      <div class="overlay-gradient"></div> 
+     
+       <video src="VIDEOS/travisscotmv.mp4" id="video-bg" autoplay loop></video>
+      
+      <div id="audio-control" class="muted"></div>
+
+     
+        <div class="col-lg-6">
+          <h1 class="big-heading">Sahal's Favorite Musics</h1>
+        </div>
+      
+    </div>  
 
     <!-- ABOUT -->
-    <!-- <section id="about">
-      <div class="container container-fluid">
-        <h2>About This Website</h2>
-        <p class="about-desc">
-          Website ini adalah platform untuk para penikmat musik untuk berbagi
-          dan menemukan musik favorit mereka. Terdapat fitur seperti ulasan
-          album, lagu terpilih, playlist, dan diskusi dalam komunitas. Pengguna
-          dapat mencari dan menemukan musik baru sesuai dengan genre dan jenis
-          musik yang disukai, serta berkolaborasi dengan teman dan anggota lain
-          dalam membuat playlist bersama. Ini adalah tempat yang sempurna bagi
-          para penggemar musik untuk mengejar dan menemukan tren musik terbaru
-          dan menikmati musik favorit mereka.
-        </p>
-      </div>
-    </section> -->
+    <div class="second-container">
+      <section id="about">
+        <div class="container container-fluid">
+          <h2>About This Website</h2>
+          <p class="about-desc">
+            Website ini adalah platform untuk para penikmat musik untuk berbagi
+            dan menemukan musik favorit mereka. Terdapat fitur seperti ulasan
+            album, lagu terpilih, playlist, dan diskusi dalam komunitas.
+            Pengguna dapat mencari dan menemukan musik baru sesuai dengan genre
+            dan jenis musik yang disukai, serta berkolaborasi dengan teman dan
+            anggota lain dalam membuat playlist bersama. Ini adalah tempat yang
+            sempurna bagi para penggemar musik untuk mengejar dan menemukan tren
+            musik terbaru dan menikmati musik favorit mereka.
+          </p>
+        </div>
+      </section>
+    </div>
 
     <!-- GENRE -->
-
-    <!-- <section id="genre">
-      <div class="container-fluid container">
-        <h2>My Favorite Music's Genre</h2>
-        <div class="row">
-          <div class="feature-box col-md-4">
-            <img class="image-crop" src="IMAGES/eminem.gif" alt="Eminem" />
-            <h3 class="genre-title">Rap/R&B</h3>
-            <p class="genre-desc">Rap adalah genre musik yang menekankan pada vokal rap dan lirik, biasanya mengandung storytelling atau penyampaian pesan sosial dan politik, dalam beat yang cepat dan mengikuti ritme hip-hop.</p>
-          </div>
-          <div class="feature-box col-md-4">
-            <img class="image-crop" src="IMAGES/zutomayo.gif" alt="Zutomayo" />
-            <h3 class="genre-title">Japanese Rock</h3>
-            <p class="genre-desc">Japanese Rock adalah genre musik yang berkembang di Jepang yang mencakup berbagai sub-genre seperti J-pop rock, visual kei, punk, dan alternative rock, dengan musik dan lirik yang seringkali bercirikan gaya Jepang dan melibatkan elemen tradisional.</p>
-          </div>
-          <div class="feature-box col-md-4">
-            <img class="image-crop" src="IMAGES/lofi.gif" alt="LoFi" />
-            <h3 class="genre-title">LoFi</h3>
-            <p class="genre-desc">
-              Lofi adalah genre musik yang menekankan pada suasana santai dan introspektif, menggunakan sample, instrument, dan efek suara lo-fi (low-fidelity) untuk menciptakan atmosfer nostalgic dan menenangkan.
-            </p>
+    <div class="third-container">
+      <section id="genre">
+        <div class="container container-fluid">
+          <h2>My Favorite Music's Genre</h2>
+          <div class="row">
+            <div class="feature-box col-md-4">
+              <img class="image-crop" src="IMAGES/eminem.gif" alt="Eminem" />
+              <h3 class="genre-title">Rap/R&B</h3>
+              <p class="genre-desc">
+                Rap adalah genre musik yang menekankan pada vokal rap dan lirik,
+                biasanya mengandung storytelling atau penyampaian pesan sosial
+                dan politik, dalam beat yang cepat dan mengikuti ritme hip-hop.
+              </p>
+            </div>
+            <div class="feature-box col-md-4">
+              <img
+                class="image-crop"
+                src="IMAGES/zutomayo.gif"
+                alt="Zutomayo" />
+              <h3 class="genre-title">Japanese Rock</h3>
+              <p class="genre-desc">
+                Japanese Rock adalah genre musik yang berkembang di Jepang yang
+                mencakup berbagai sub-genre seperti J-pop rock, visual kei,
+                punk, dan alternative rock, dengan musik dan lirik yang
+                seringkali bercirikan gaya Jepang dan melibatkan elemen
+                tradisional.
+              </p>
+            </div>
+            <div class="feature-box col-md-4">
+              <img class="image-crop" src="IMAGES/lofi.gif" alt="LoFi" />
+              <h3 class="genre-title">LoFi</h3>
+              <p class="genre-desc">
+                Lofi adalah genre musik yang menekankan pada suasana santai dan
+                introspektif, menggunakan sample, instrument, dan efek suara
+                lo-fi (low-fidelity) untuk menciptakan atmosfer nostalgic dan
+                menenangkan.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
+      </section>
+    </div>
+    
     <section id="artist">
       <div class="container container-fluid">
         <h2>My Favorite Artist Each Genres</h2>
@@ -185,12 +205,11 @@
               Eve adalah penyanyi Jepang yang lahir pada 4 Oktober 1981. Ia memulai karier musiknya pada tahun 1999 dan meraih popularitas dengan single hit "Tokyo." Eve memiliki musik yang mencakup genre pop dan R&B, dan dikenal dengan vokal yang kuat dan enerjik. Ia memiliki beberapa hit populer seperti "Kimi ga Ita Kara" dan "Anata Dake ga." Eve juga memiliki pengaruh besar dalam industri musik Jepang dan telah menerima beberapa penghargaan dan pengakuan. Ia memiliki banyak pengikut dan penggemar di Jepang dan seluruh dunia. Eve tetap menjadi salah satu penyanyi Jepang paling berbakat dan populer saat ini.  
             </p>
           </div>
-          
         </div>
       </div>
     </section>
 
-   -->
+   
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
