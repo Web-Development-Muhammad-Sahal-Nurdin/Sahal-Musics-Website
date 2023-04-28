@@ -238,6 +238,8 @@ video {
 /* FOOTER */
 footer {
   background-color: #22232e;
+  padding: 30px;
+  margin: 0;
 }
 
 .music-logo {
@@ -257,6 +259,14 @@ footer {
 .pb {
   float: right;
   margin-left: 20px;
+}
+animate__fadeIn {
+  --animate-duration: 2s;
+}
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 10s;
 }
 
 /* RESPONSIVE */
