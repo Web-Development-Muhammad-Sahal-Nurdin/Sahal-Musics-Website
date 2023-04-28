@@ -171,8 +171,8 @@ video {
   padding: 1.875rem;
 }
 .artist-section {
-  margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin: 3rem auto;
+  padding: 0;
 }
 
 .headtext-genre {
@@ -235,6 +235,30 @@ video {
   transform: scale(1.2);
 }
 
+/* FOOTER */
+footer {
+  background-color: #22232e;
+}
+
+.music-logo {
+  width: 100px;
+  margin: 30px auto;
+}
+
+.text-head {
+  color: #fff;
+  margin: 0 auto 30px;
+}
+
+.foot-desc {
+  text-align: center;
+}
+
+.pb {
+  float: right;
+  margin-left: 20px;
+}
+
 /* RESPONSIVE */
 
 @media (min-aspect-ratio: 16/9) {
@@ -253,7 +277,17 @@ video {
 
 @media (max-width: 768px) {
   .col-sm-6 > img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 375px) {
+  .image-container {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .pb {
+    float: none;
   }
 }
