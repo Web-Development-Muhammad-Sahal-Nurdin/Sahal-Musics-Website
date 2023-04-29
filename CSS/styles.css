@@ -1,12 +1,12 @@
 /** @format */
 
 * {
-  /* box-sizing: inherit; */
+  box-sizing: inherit;
   scroll-behavior: smooth;
 }
 
 html {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
 
@@ -237,6 +237,9 @@ video {
 }
 
 /* FOOTER */
+text-center {
+  background-color: #22232e;
+}
 footer {
   background-color: #22232e;
   padding: 30px;
