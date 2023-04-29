@@ -1,11 +1,12 @@
 /** @format */
 
 * {
-  box-sizing: inherit;
+  /* box-sizing: inherit; */
   scroll-behavior: smooth;
 }
+
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: "Raleway", sans-serif;
 }
 
@@ -256,19 +257,6 @@ footer {
   text-align: center;
 }
 
-.pb {
-  float: right;
-  margin-left: 20px;
-}
-animate__fadeIn {
-  --animate-duration: 2s;
-}
-
-:root {
-  --animate-duration: 800ms;
-  --animate-delay: 10s;
-}
-
 /* RESPONSIVE */
 
 @media (min-aspect-ratio: 16/9) {
@@ -289,15 +277,5 @@ animate__fadeIn {
   .col-sm-6 > img {
     width: 200px;
     height: 200px;
-  }
-}
-@media (max-width: 375px) {
-  .image-container {
-    text-align: center;
-  }
-}
-@media (min-width: 768px) {
-  .pb {
-    float: none;
   }
 }
